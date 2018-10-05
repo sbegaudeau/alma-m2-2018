@@ -36,7 +36,7 @@ Each student should now clone their Git repository on their machine. You will al
 Add the repository of the organisation to your local repository using the following command:
 
 ```
-git remote add organization git@github.com:organization_name/alma-m2-2018.git
+git remote add organization https://github.com/organization_name/alma-m2-2018.git
 ```
 
 
@@ -49,11 +49,13 @@ git remote -v
 This command should indicate something like this
 
 ```
-origin	git@github.com:student_username/alma-m2-2018.git (fetch)
-origin	git@github.com:student_username/alma-m2-2018.git (push)
-organization	git@github.com:organization_name/alma-m2-2018.git (fetch)
-organization	git@github.com:organization_name/alma-m2-2018.git (push)
+origin	https://github.com/student_username/alma-m2-2018.git (fetch)
+origin	https://github.com/student_username/alma-m2-2018.git (push)
+organization	https://github.com/organization_name/alma-m2-2018.git (fetch)
+organization	https://github.com/organization_name/alma-m2-2018.git (push)
 ```
+
+You can see both URLs in the file .git/config
 
 ### Initialization with the code
 
