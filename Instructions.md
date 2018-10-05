@@ -1,3 +1,12 @@
+Project Management slides: https://speakerdeck.com/sbegaudeau/project-management
+
+Interships at Obeo
+
+* [Représentations web pour Sirius](https://www.obeo.fr/ressources/stage/Stage%20Obeo%20-%20Representations%20web%20pour%20Sirius.pdf)
+* [Comparaison de représentations graphiques](https://www.obeo.fr/ressources/stage/Stage%20Obeo%20Comparaison%20de%20representations%20graphiques.pdf)
+* [Extension du language CESON](https://www.obeo.fr/ressources/stage/Stage%20Obeo%20-%20CESON.pdf)
+
+
 Short URL: https://goo.gl/uVJ6g5
 
 ## Misc
