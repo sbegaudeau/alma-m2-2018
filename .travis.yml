@@ -20,3 +20,12 @@ after_success:
   - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
   - docker images
   - docker push equipechocgit/alma-server:latest
+
+deploy:
+  provider: releases
+  api_key: "cee28893bd5d2035b274"
+  file_glob: true
+  file: alma-server/**/*
+  skip_cleanup: true
+  on:
+    tags: true
