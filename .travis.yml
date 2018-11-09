@@ -21,14 +21,10 @@ after_success:
   - docker images
   - docker push labrasse/alma-server:latest
 
-before_deploy:
-  # Set up git user name and tag this commit
-  # - git config --local user.name "YOUR GIT USER NAME"
-  # - git config --local user.email "YOUR GIT USER EMAIL"
-  - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
+  api_key: "32f1875d7f018e1af412a87a93d2a500e0a34a53"
+  file: "alma-server/target/alma-server-1.0.0-SNAPSHOT.jar"
   skip_cleanup: true
+  on:
+    tags: true
