@@ -15,3 +15,8 @@ before_install:
 
 script:
   - mvn clean verify -f alma-server/pom.xml -e
+
+after_success:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
+  - docker images
+  - docker push roguealma/alma-server:latest
